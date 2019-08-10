@@ -1,0 +1,332 @@
+@import 'mobile_size';
+
+body {
+  margin: 0;
+}
+
+.slogan-view-container {
+  display: flex;
+  flex-direction: column;
+  background: url("../image/house_stairs.jpg") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 331px;
+
+  @media screen and (min-width: $mobile_screen) {
+    background: url("../image/living_room.jpg") no-repeat;
+    background-size: cover;
+    height: 484px;
+  }
+  .header-section {
+    .buttons-container {
+      float: right;
+      margin-right: 16px;
+
+      @media screen and (min-width: $mobile_screen) {
+        position: absolute;
+        top: 6px;
+        left: 1012px;
+      }
+      .icon {
+        float: left;
+        border: solid white 1px;
+        width: 30px;
+        height: 24px;
+        text-align: center;
+        padding-top: 9px;
+      }
+      .text {
+        float: left;
+        border-color: white;
+        border-width: 1px 1px 1px 0;
+        border-style: solid;
+        text-align: center;
+        width: 60px;
+        height: 25px;
+        padding-top: 8px;
+      }
+    }
+  }
+  .main-title {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 48px;
+    p {
+      &.slogan {
+        margin: 0;
+
+        @media screen and (min-width: $mobile_screen) {
+          font-size: 25px;
+          display: flex;
+          width: 1122px;
+          margin-left: 36px;
+          padding-top: 100px;
+          padding-bottom: 23px;
+        }
+      }
+    }
+  }
+  .search-section {
+    margin-top: 35px;
+
+    @media screen and (min-width: $mobile_screen) {
+      margin-top: 15px;
+      margin-left: 126px;
+    }
+    .search-box {
+      float: left;
+      margin-left: 8px;
+
+      @media screen and (min-width: $mobile_screen) {
+        float: left;
+        width: 370px;
+        height: 47px;
+        padding-top: 5px;
+        background-color: white;
+      }
+      .search-field {
+        border: 0;
+        width: 300px;
+        height: 42px;
+      }
+    }
+    .checkbox-container {
+      display: none;
+
+      @media screen and (min-width: $mobile_screen) {
+        background-color: white;
+        color: gray;
+        height: 37px;
+        display: block;
+        float: left;
+        padding-top: 15px;
+        border-right-color: #cecece;
+        border-right-style: solid;
+        border-right-width: 1px;
+        padding-right: 10px;
+      } 
+    }
+    .modality-container {
+      display: none;
+
+      @media screen and (min-width: $mobile_screen) {
+        display: block;
+      }
+      .modality-icon-container {
+        @media screen and (min-width: $mobile_screen) {
+          display: block;
+          color: black;
+          position: absolute;
+          top: 283px;
+          left: 810px;
+        }
+      }
+      .search-by-modality {
+        @media screen and (min-width: $mobile_screen) {
+          border: 0;
+          display: block;
+          float: left;
+          height: 52px;
+          width: 150px;
+          padding-left: 10px;
+          border-right-color: #cecece;
+          border-right-style: solid;
+          border-right-width: 1px;
+        }
+      }  
+    }
+    .type-container {
+      display: none;
+
+      @media screen and (min-width: $mobile_screen) {
+        display: block;
+      }
+      .type-icon-container {
+        @media screen and (min-width: $mobile_screen) {
+          display: block;
+          color: black;
+          position: absolute;
+          top: 283px;
+          left: 970px;
+        } 
+      }
+      .search-by-type{
+        display: none;
+
+        @media screen and (min-width: $mobile_screen) {
+          border: 0;
+          display: block;
+          float: left;
+          height: 52px;
+          width: 160px;
+          padding-left: 20px;
+        }
+      }
+    }
+    .button {
+      float: left;
+      .button-icon {
+        border: 0;
+        background-color: rgb(90, 132, 238);
+        color: white;
+        width: 52px;
+        height: 42px;
+
+        @media screen and (min-width: $mobile_screen) {
+          width: 76px;
+          height: 52px;
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    height: 60px;
+    font-size: 15px;
+    margin-top: 18px;
+  }
+}
+
+.slogan-view-container > div {
+  color: white;
+  padding: 4px;
+}
+
+.icon:hover {
+  background-color: rgb(90, 132, 238);
+}
+
+.text:hover {
+  background-color: rgb(90, 132, 238);
+}
+
+.desktop-header-title {
+  display: none;
+
+  @media screen and (min-width: $mobile_screen) {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }    
+}
+
+.slogan-view-container-page-views {
+  @media screen and (min-width: $mobile_screen) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 76px;
+  }
+
+  .zone-page-view {
+    @media screen and (min-width: $mobile_screen) {
+      width: 29%;
+    }
+    .header-title {
+      @media screen and (min-width: $mobile_screen) {
+        display: none;
+      } 
+    }
+    .image-container {
+      @media screen and (min-width: $mobile_screen) {
+        padding-top: 35px;
+        margin-bottom: 0;
+      } 
+    }
+    .header-title {
+      text-align: center;
+      margin: 15px;
+      padding-bottom: 5px;
+      font-size: 18px;
+      padding-top: 50px;
+    }
+  }
+  .filter-page-view {
+    @media screen and (min-width: $mobile_screen) {
+        width: 29%;
+    }  
+  }
+  .opportunity-page-view {
+    @media screen and (min-width: $mobile_screen) {
+        width: 29%;
+    }  
+  }
+}
+
+.image-container {
+  margin-bottom: -4px;
+  img {
+    width: 65%;
+    margin-left: 70px;
+  }
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 16px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 25px;
+}
+
+.image-container-custom {
+  img {
+    width: 65%;
+    margin-left: 70px;
+    padding-top: 35px;
+  }
+}
+
+.app-use-page-view {
+  background-color: #f0eeee;
+  .big-title {
+    font-size: 20px;
+    text-align: center;
+    padding: 25px 0;
+
+    @media screen and (min-width: $mobile_screen) {
+      font-size: 30px;
+    }
+  }
+  .app-invitation-message {
+    font-size: 18.5px;
+    text-align: center;
+    color: gray;
+    padding-bottom: 25px;
+
+    @media screen and (min-width: $mobile_screen) {
+      font-size: 26px;
+      width: 630px;
+      margin-left: 286px;
+    }
+  }
+  .app-information {
+    background-color: rgb(90, 132, 238);
+    color: white;
+    text-align: center;
+    width: 350px;
+    height: 30px;
+    padding-top: 10px;
+    margin-left: 12px;
+    margin-bottom: 25px;
+
+    @media screen and (min-width: $mobile_screen) {
+      font-size: 21px;
+      width: 465px;
+      margin-left: 370px;
+      padding-bottom: 14px;
+    }
+  }
+  .image-container {
+    @media screen and (min-width: $mobile_screen) {
+      margin-left: 190px;
+    }    
+  }
+  .black-footer {
+    background-color: black;
+    width: 100%;
+    height: 35px;
+  }
+}
